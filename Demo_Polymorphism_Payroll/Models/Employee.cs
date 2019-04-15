@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.Models
+namespace Demo_Polymorphism_Payroll.Models
 {
     class Employee
     {

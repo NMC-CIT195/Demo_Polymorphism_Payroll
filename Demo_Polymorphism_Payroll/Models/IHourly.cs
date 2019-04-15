@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.Models
+namespace Demo_Polymorphism_Payroll.Models
 {
     interface IHourly
     {
         double HourlyWage { get; set; }
 
-        double GrossHourlyPay(double hours);
+        double CalculateHourlyPay(double hours);
     }
 }

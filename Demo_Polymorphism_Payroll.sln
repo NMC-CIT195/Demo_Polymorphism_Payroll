@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR", "HR\HR.csproj", "{7114E02D-CC9B-4211-ACE3-6163558B545C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_Polymorphism_Payroll", "Demo_Polymorphism_Payroll\Demo_Polymorphism_Payroll.csproj", "{7114E02D-CC9B-4211-ACE3-6163558B545C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

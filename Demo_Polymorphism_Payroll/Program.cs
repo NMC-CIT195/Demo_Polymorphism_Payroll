@@ -1,17 +1,18 @@
-﻿using HR.Models;
+﻿using Demo_Polymorphism_Payroll.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR
+namespace Demo_Polymorphism_Payroll
 {
     class Program
     {
         static void Main(string[] args)
         {
             List<Employee> employees = IntializeEmployees();
+            DisplayPayroll(employees);
         }
 
         static void DisplayPayroll(List<Employee> employees)
@@ -30,16 +31,28 @@ namespace HR
                 }
                 if (employee is ISalary)
                 {
-                    ISalary regularPay = employee as ISalary;
-                    Console.Write("Enter Overtime Hours: ");
-                    double.TryParse(Console.ReadLine(), out double hours);
-                    Console.WriteLine($"Regular Pay: {regularPay.GrossSalaryPay()}");
+                    ISalary regularPayEmployee = employee as ISalary;
+                    Console.WriteLine($"Regular Pay: {regularPayEmployee.CalculateRegularPay()}");
                 }
                 if (employee is IHourly)
                 {
-                    IHourly hourlyEmployee = employee as ISalary;
-                    Console.Write("Enter Overtime Hours: ");
+                    string hourType;
+                    if (employee is FullTime)
+                    {
+                        hourType = "Overtime";
+                    }
+                    else
+                    {
+                        hourType = "Regular";
+                    }
+
+                    IHourly hourlyPayEmployee = employee as IHourly;
+                    Console.Write($"Enter {hourType} Hours: ");
+                    double.TryParse(Console.ReadLine(), out double hours);
+                    Console.WriteLine($"Hourly Pay: {hourlyPayEmployee.CalculateHourlyPay(hours)}");
                 }
+
+                Console.WriteLine("\n\n");
             }
 
             Console.WriteLine("Press any key to exit.");
@@ -63,10 +76,10 @@ namespace HR
 
                 new PartTime()
                 {
-                    Id = 1,
+                    Id = 2,
                     LastName = "Velis",
                     FirstName = "Jeff",
-                    HourlyWage = 4.5
+                    HourlyWage = 15.5
                 }
             };
         }

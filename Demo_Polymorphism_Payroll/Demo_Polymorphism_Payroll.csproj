@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7114E02D-CC9B-4211-ACE3-6163558B545C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HR</RootNamespace>
-    <AssemblyName>HR</AssemblyName>
+    <RootNamespace>Demo_Polymorphism_Payroll</RootNamespace>
+    <AssemblyName>Demo_Polymorphism_Payroll</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

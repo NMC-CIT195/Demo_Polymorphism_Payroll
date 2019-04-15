@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.Models
+namespace Demo_Polymorphism_Payroll.Models
 {
     interface ISalary
     {
         double AnnualSalary { get; set; }
 
-        double RegularPay();
+        double CalculateRegularPay();
     }
 }
