@@ -37,6 +37,7 @@ namespace Demo_Polymorphism_Payroll
                 if (employee is IHourly)
                 {
                     string hourType;
+
                     if (employee is FullTime)
                     {
                         hourType = "Overtime";
@@ -49,7 +50,7 @@ namespace Demo_Polymorphism_Payroll
                     IHourly hourlyPayEmployee = employee as IHourly;
                     Console.Write($"Enter {hourType} Hours: ");
                     double.TryParse(Console.ReadLine(), out double hours);
-                    Console.WriteLine(String.Format($"Hourly Pay: {hourlyPayEmployee.CalculateHourlyPay(hours):c}"));
+                    Console.WriteLine(String.Format($"{hourType} Pay: {hourlyPayEmployee.CalculateHourlyPay(hours):c}"));
                 }
 
                 Console.WriteLine("\n\n");

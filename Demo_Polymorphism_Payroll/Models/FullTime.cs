@@ -8,8 +8,8 @@ namespace Demo_Polymorphism_Payroll.Models
 {
     class FullTime : Employee, ISalary, IHourly
     {
-        public bool HealthBenefits;
-        public bool RetirementBenefits;
+        public bool HealthBenefits { get; set; }
+        public bool RetirementBenefits { get; set; }
 
         public double AnnualSalary { get; set; }
         public double HourlyWage { get; set; }
