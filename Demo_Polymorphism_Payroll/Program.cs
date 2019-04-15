@@ -32,7 +32,7 @@ namespace Demo_Polymorphism_Payroll
                 if (employee is ISalary)
                 {
                     ISalary regularPayEmployee = employee as ISalary;
-                    Console.WriteLine($"Regular Pay: {regularPayEmployee.CalculateRegularPay()}");
+                    Console.WriteLine(String.Format($"Regular Pay: {regularPayEmployee.CalculateRegularPay():c}"));
                 }
                 if (employee is IHourly)
                 {
@@ -49,7 +49,7 @@ namespace Demo_Polymorphism_Payroll
                     IHourly hourlyPayEmployee = employee as IHourly;
                     Console.Write($"Enter {hourType} Hours: ");
                     double.TryParse(Console.ReadLine(), out double hours);
-                    Console.WriteLine($"Hourly Pay: {hourlyPayEmployee.CalculateHourlyPay(hours)}");
+                    Console.WriteLine(String.Format($"Hourly Pay: {hourlyPayEmployee.CalculateHourlyPay(hours):c}"));
                 }
 
                 Console.WriteLine("\n\n");

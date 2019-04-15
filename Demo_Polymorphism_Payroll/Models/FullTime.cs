@@ -16,7 +16,7 @@ namespace Demo_Polymorphism_Payroll.Models
 
         public double CalculateHourlyPay(double hours)
         {
-            return hours * HourlyWage;
+            return hours * HourlyWage * 1.5;
         }
 
         public double CalculateRegularPay()
