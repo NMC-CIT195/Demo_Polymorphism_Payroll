@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Demo_Polymorphism_Payroll
 {
+    /// <summary>
+    /// demonstration of polymophism using inheritance and interfaces
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
