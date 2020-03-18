@@ -45,6 +45,7 @@
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\FullTime.cs" />
     <Compile Include="Models\IHourly.cs" />
+    <Compile Include="Models\IOvertime.cs" />
     <Compile Include="Models\ISalary.cs" />
     <Compile Include="Models\PartTime.cs" />
     <Compile Include="Program.cs" />

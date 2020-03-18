@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Demo_Polymorphism_Payroll.Models
 {
-    interface IHourly
+    interface IOvertime
     {
-        double HourlyWage { get; set; }
-
-        double CalculateRegularHourlyPay(double regularHours);
-
+        double CalculateOvertimePay(double overtimeHours);
     }
 }
