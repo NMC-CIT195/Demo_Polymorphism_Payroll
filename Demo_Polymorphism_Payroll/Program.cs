@@ -7,9 +7,16 @@ using System.Threading.Tasks;
 
 namespace Demo_Polymorphism_Payroll
 {
-    /// <summary>
-    /// demonstration of polymophism using inheritance and interfaces
-    /// </summary>
+    // **************************************************
+    //
+    // Title: CIT 195 - Demo - Polymorphism
+    // Description: Demonstration of polymorphism and the use of 'is' and 'as'
+    // Application Type: Console
+    // Author: Velis, John
+    // Dated Created: 3/16/2020
+    // Last Modified: 
+    //
+    // **************************************************
     class Program
     {
         static void Main(string[] args)
